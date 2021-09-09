@@ -1,6 +1,7 @@
 import './App.css';
 
 import ExpenseNew from './components/ExpenseNew';
+import NewExpense from './components/NewExpense/NewExpense';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
     <div className="App">
       <p>gge</p>
       <div>
+        <NewExpense></NewExpense>
         <ExpenseNew expenses={expenses}></ExpenseNew>
       </div>
     </div>
