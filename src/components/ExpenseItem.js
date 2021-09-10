@@ -18,7 +18,6 @@ function ExpenseItem(props) {
   }
 
 
-  console.log(props.date);
   return (
     <Card className="expense-item">
       <div>

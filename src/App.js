@@ -27,14 +27,25 @@ function App() {
     },
   ];
 
+
+
+  const addChangeHandler = (newExpense) => {
+
+    console.log("New Expense is", newExpense);
+
+  }
+
+
+
   return (
     <div className="App">
       <p>gge</p>
       <div>
-        <NewExpense></NewExpense>
+        <NewExpense onAddExpense={addChangeHandler}></NewExpense>
         <ExpenseNew expenses={expenses}></ExpenseNew>
       </div>
     </div>
+
   );
 }
 
