@@ -15,14 +15,16 @@ function NewExpense(props) {
       ...expenseData,
       id: Math.round(Math.random().toString())
 
+
     }
     props.onAddExpense(expenseValue);
+    setEditing(false);
   }
 
-  const [isEditing, setEditing] = useState(false);
 
+  const [isEditing, setEditing] = useState(false);
   const expenseHandler = () => {
-    setEditing(true);
+    setEditing(!isEditing);
   }
 
   const cancelExpenseHandler = () => {

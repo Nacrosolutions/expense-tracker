@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import Card from './Card';
 import ExpensesFilter from './ExpenseFilter/ExpensesFilter';
-import ExpenseItem from './ExpenseItem';
 import ExpenseList from './ExpenseList';
 
 import './Expenses.css';
+import ExpensesChart from './NewExpense/ExpensesChart';
 
 function ExpenseNew(props) {
 
@@ -32,7 +32,7 @@ function ExpenseNew(props) {
       {/* {console.log(props.expenses.filter())} */}
       <Card className="expenses">
         <ExpensesFilter onFilter={filterChangeHandler} selected={intValue} />
-
+        <ExpensesChart expense={filterExpense} />
 
         <ExpenseList expense={filterExpense} />
 
