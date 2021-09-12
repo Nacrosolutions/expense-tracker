@@ -5,7 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #4b4b4b;
+  /* background-color: #f3a9a9; */
+  background-image: url('./images/sky.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 20px;
 }
 
 code {
